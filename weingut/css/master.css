@@ -1,0 +1,49 @@
+nav {
+  margin: 10px;
+  margin-bottom: 25px;
+}
+h1 {
+  margin-left: 12px;
+  margin-bottom: 50px;
+}
+hr {
+  width: 80%;
+  margin-top:40px;
+  margin-bottom: 40px;
+}
+.width-75 {
+  width: 75%;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.margin-bottom-0 {
+  margin-bottom:0;
+}
+h3 {
+  text-align:center;
+  margin-bottom: 25px;
+}
+.align-center {
+  text-align: center;
+}
+.card {
+  margin-bottom: 25px;
+}
+.para {
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+.carousel {
+  width: 50%;
+  margin: 20px auto;
+}
+.h3-wwwir {
+  text-align:left;
+}
+.h4-verkostung {
+  text-align: center;
+}
