@@ -49,22 +49,26 @@
       <a href="mailto:">michaela@weingut-steyrer.at</a></p>
     <hr>
     <h3>Kontaktformular</h3>
-    <form action="kontakt.php" method="post">
+    <form action="kontakt.php" method="post" class="forms">
       <div class="form-group">
-        <label for="exampleInputEmail1">Email-Adresse<span class="red">*</span></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ihre Email-Adresse" required="required">
+        <label for="mail">Email-Adresse<span class="red">*</span></label>
+        <input type="email"  name="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Ihre Email-Adresse" required="required">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
-        <label for="exampleInputName2">Vorname<span class="red">*</span></label>
-        <input type="name" class="form-control" id="exampleInputName2" placeholder="Ihr Vorname" required="required">
+        <label for="firstname">Vorname<span class="red">*</span></label>
+        <input type="name" name="firstname" class="form-control" id="firstname" placeholder="Ihr Vorname" required="required">
       </div>
       <div class="form-group">
-        <label for="exampleInputName1">Nachname<span class="red">*</span></label>
-        <input type="name" class="form-control" id="exampleInputName1" placeholder="Ihr Nachname" required="required">
+        <label for="lastname">Nachname<span class="red">*</span></label>
+        <input type="name" class="form-control" name="lastname" id="lastname" placeholder="Ihr Nachname" required="required">
+      </div>
+      <div class="form-group">
+        <label for="message">Nachricht</label>
+        <textarea class="form-control" name="message" id="message" rows="3"></textarea>
       </div>
       <div class="g-recaptcha" data-sitekey="6Leq040UAAAAANLU02vEHbxg4Zdk130Mjlv0MuqQ"></div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <footer>
