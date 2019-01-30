@@ -37,6 +37,11 @@ h3 {
   width: 50%;
   margin: 0 auto;
 }
+.para-left {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px 10px;
+}
 .carousel {
   width: 50%;
   margin: 20px auto;
@@ -46,4 +51,7 @@ h3 {
 }
 .h4-verkostung {
   text-align: center;
+}
+.red {
+  color: #ff0000;
 }

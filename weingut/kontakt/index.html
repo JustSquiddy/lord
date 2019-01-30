@@ -11,42 +11,70 @@
   <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#"><img id="icon" src="media/placeholder.png" height="50" >    GletscherFloh</a>
+      <a class="navbar-brand" href="../"><img id="icon" src="media/placeholder.png" height="50" >    GletscherFloh</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="../index.html">Home</a>
-          <a class="nav-item nav-link" href="../weingut/index.html">WEIN.GUT</a>
-          <a class="nav-item nav-link" href="../wwwir/index.html">WWWir</a>
-          <a class="nav-item nav-link active" href="../verkostung/index.html">Verkostung & Verkauf <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="../">Home</a>
+          <a class="nav-item nav-link" href="../weingut">WEIN.GUT</a>
+          <a class="nav-item nav-link" href="../wwwir">WWWir</a>
+          <a class="nav-item nav-link" href="../verkostung">Verkostung & Verkauf</a>
         </div>
       </div>
     </nav>
-
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon3">@example.com</span>
+    <h1 style="margin-top: 100px;">Kontakt</h1>
+    <p class="para-left">Für Informationen und Reservierungen stehen wir unter folgenden Kontaktmöglichkeiten zur Verfügung:</p>
+    <p class="para-left" style="margin-top: 40px;">Weingut Steyer
+      Pointweg 10 <br>
+      3125 Kuffern <br>
+      Tel. & Fax: <a href="+4327862603">+43(0)2786/2603</a> <br>
+      Mobil: <a href="tel:+436643811399">0664/3811399</a> <br>
+      <a href="http://www.weingut-steyrer.at">www.weingut-steyrer.at</a> <br>
+      <a href="mailto:traisental@weingut-steyrer.at">traisental@weingut-steyrer.at</a> <br>
+      Zustellung/Lieferservice!</p>
+<hr>
+    <p class="para-left" >Bernhard Steyrer <br>
+      <a href="tel:+436643811399">0664/3811399</a> <br>
+      <a href="mailto:bernhard@weingut-steyrer.at">bernhard@weingut-steyrer.at</a></p>
+<hr>
+    <p class="para-left">Johann Steyrer <br>
+      <a href="tel:+436649025055">0664/9025055</a> <br>
+      <a href="mailto:johann@weingut-steyrer.at">johann@weingut-steyrer.at</a>
+</p>
+<hr>
+    <p class="para-left">Michaela Steyrer <br>
+      <a href="tel:+436804410369">0680/4410369</a> <br>
+      <a href="mailto:">michaela@weingut-steyrer.at</a></p>
+    <hr>
+    <h3>Kontaktformular</h3>
+    <form action="kontakt.php" method="post">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email-Adresse<span class="red">*</span></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ihre Email-Adresse" required="required">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-    </div>
-    <script>
-      grecaptcha.ready(function() {
-      grecaptcha.execute('6Le4x40UAAAAAFjUTOl9K6FKUog4pXNWpxIDm62e', {action: 'action_name'})
-      .then(function(token) {
-      // Token auf dem Server verifizieren.
-      });
-      });
-</script>
+      <div class="form-group">
+        <label for="exampleInputName2">Vorname<span class="red">*</span></label>
+        <input type="name" class="form-control" id="exampleInputName2" placeholder="Ihr Vorname" required="required">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputName1">Nachname<span class="red">*</span></label>
+        <input type="name" class="form-control" id="exampleInputName1" placeholder="Ihr Nachname" required="required">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
     <footer>
       <hr style="width:90%;">
       <div class="row justify-content-around" style="text-align: center">
         <div class="col-3">
-          <a href="#">Kontakt</a>
+          <a href="../kontakt">Kontakt</a>
         </div>
         <div class="col-3">
-          <a href="#">Impressum/Datenschutz/AGB</a>
+          <a href="../impressum">Impressum/Datenschutz/AGB</a>
         </div>
         <div class="col-3">
           <a href="http://weingut-steyrer.at">weingut-steyrer.at</a>
@@ -59,5 +87,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="../js/master.js"></script>
+    <script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6Le4x40UAAAAAFjUTOl9K6FKUog4pXNWpxIDm62e', {action: 'action_name'})
+.then(function(token) {
+// Token auf dem Server verifizieren.
+});
+});
+</script>
   </body>
 </html>
